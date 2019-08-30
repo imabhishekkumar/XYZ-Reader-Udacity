@@ -89,6 +89,7 @@
         android:layout_margin="@dimen/fab_margin"
         app:srcCompat="@drawable/ic_share"
         app:borderWidth="0dp"
+        android:elevation="@dimen/fab_elevation"
         android:contentDescription="@string/action_share" />
 
 </com.example.xyzreader.ui.DrawInsetsFrameLayout>
