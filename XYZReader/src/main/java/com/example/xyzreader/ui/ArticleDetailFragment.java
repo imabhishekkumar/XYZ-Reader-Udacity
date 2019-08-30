@@ -156,6 +156,7 @@ public class ArticleDetailFragment extends Fragment implements
 
             collapsingToolbarLayout.setTitle(mCursor.getString(ArticleLoader.Query.TITLE));
             collapsingToolbarLayout.setCollapsedTitleTextColor(getResources().getColor(R.color.text_primary));
+            collapsingToolbarLayout.setExpandedTitleColor(getResources().getColor(R.color.text_primary));
 
             Date publishedDate = parsePublishedDate();
             if (!publishedDate.before(START_OF_EPOCH.getTime())) {
@@ -164,7 +165,7 @@ public class ArticleDetailFragment extends Fragment implements
                                 publishedDate.getTime(),
                                 System.currentTimeMillis(), DateUtils.HOUR_IN_MILLIS,
                                 DateUtils.FORMAT_ABBREV_ALL).toString()
-                                + " by <font color='#1DE9B6'>"
+                                + " by <font color='#E040FB'>"
                                 + mCursor.getString(ArticleLoader.Query.AUTHOR)
                                 + "</font>"));
 
