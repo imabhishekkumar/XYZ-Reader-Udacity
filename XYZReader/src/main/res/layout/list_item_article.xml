@@ -5,7 +5,6 @@
     android:layout_margin="5dp"
     app:cardUseCompatPadding="true"
     app:cardBackgroundColor="@color/theme_primary"
-    android:elevation="@dimen/cardview_default_elevation"
     app:cardCornerRadius="8dp">
 
     <LinearLayout
@@ -43,8 +42,7 @@
         <com.example.xyzreader.ui.DynamicHeightNetworkImageView
             android:id="@+id/thumbnail"
             android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:layout_margin="8dp"
+            android:layout_height="0dp"
             android:background="@color/photo_placeholder"
             android:scaleType="centerCrop" />
     </LinearLayout>
